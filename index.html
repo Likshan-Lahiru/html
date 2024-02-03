@@ -16,7 +16,41 @@
 <body>
 
 
-<img src="assets/wild.jpg" title="wild.com" alt="wild.com">
+<!--
+web picture size
+1.large
+2.medium
+3.small
+-->
+<picture>
+    <source media="(min-width: 1000px)" srcset="assets/imeges/large.jpeg">
+    <source media="(min-width: 800px)" srcset="assets/imeges/medium.jpeg">
+    <img src="assets/imeges/small.jpeg" title="iphone" alt="iphone">
+</picture>
+
+<!-- video eka auto play wena video default muted wena one-->
+
+<video controls
+       autoplay
+       loop
+       muted
+       poster="assets/imeges/replaceVideo.jpeg"
+       width="700px"
+       height="400px"
+>
+
+    <source src="assets/videos/car.mp4" type="video/mp4">
+    <source src="assets/videos/car.webm" type="video/webm">
+    <track label="ENGLISH" kind="subtitle" src="assets/sub/sample.vtt" srclan="en"> <track>
+    Your browser does not support the video tag.
+
+</video>
+
+<audio controls>
+    <source src="assets/audio/audio_file2.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+
+</audio>
 
 </body>
 </html>
