@@ -179,65 +179,105 @@
 
     <br>
 
+    <!--select (select value eka dana one standard)-->
+
     <div>
-        <label for="select">HTML select</label>
+        <label for="select">HTML select</label> <br>
         <select id="select">
 
-            <option>java</option>
-            <option>python</option>
-            <option>C++</option>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="C++">C++</option>
+        </select>
+
+    </div>
+
+    <br><br>
+
+    <!--opt group walin anu group walata bedana puluwn select option ekak etul -->
+
+    <div>
+        <label for="advance select">HTML advance select</label> <br>
+        <select id="advance select">
+
+            <optgroup label="Languages" >
+                <option value="java">java</option>
+                <option value="python">python</option>
+                <option value="C++">C++</option>
+            </optgroup>
+
+            <optgroup label="Front end">
+                <option value="nextJs">NextJS</option>
+                <option value="angular">Angular</option>
+                <option value="vue">Vue</option>
+            </optgroup>
+
+            <optgroup label="Back end">
+                <option value="spring">Spring</option>
+                <option value="spring boot">Spring boot</option>
+                <option value="express Js">Express Js</option>
+            </optgroup>
+
+
+
         </select>
 
     </div>
 
 
+    <br><br>
+    <!--data list -->
+    <div>
+        <input type="text" placeholder="Enter Your Country " list="country list"> <br>
+        <datalist id="country list">
+            <option value="sri lanka">Sri Lanka</option>
+            <option value="japan">Japan</option>
+            <option value="russia">Russia</option>
+            <option value="usa">USAa</option>
+            <option value="india">India</option>
+            <option value="norway">Norway</option>
+            <option value="nepal">Nepal</option>
+
+        </datalist>
+
+    </div>
+
+    <br>
+
+    <!--set name radio button. when select one button if you want other button unselect last select button  select and select button-->
 
 
+    <fieldset>
+        <!--field ekta name ekak dena puluwn-->
+        <legend>SELECT YOUR LEGEND</legend>
 
+        <div>
 
+            <input type="radio" name="gender"  > <label>Male</label>
+            <input type="radio" name="gender"  > <label>Female</label>
 
+        </div>
+    </fieldset>
 
+    <!--create new button-->
 
+    <br><br>
 
+    <button type="button">click</button>>
+    <button type="submit">Save</button>>
+    <button type="submit">submit</button>
+    <button type="reset">Reset</button>
+</form>
+<br><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--change ekak wenkotama value ekta a kiyna kenage agaya hri b atributes eke reult value ek set karana
+-->
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a"  name="a" value="10">
+    +
+    <input type="number" id="b"  name=""b value="50">
+    =
+    <output name="result">30</output>
 
 
 
